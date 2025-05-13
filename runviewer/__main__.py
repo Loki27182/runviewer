@@ -1036,7 +1036,7 @@ class RunViewer(object):
         of interpolation."""
         # TODO: Only finely sample the currently visible region. Coarsely sample the rest
         # x_out = numpy.float32(numpy.linspace(data_x[0], data_x[-1], 4000*(data_x[-1]-data_x[0])/(xmax-xmin)))
-        x_out = numpy.float64(numpy.linspace(xmin, xmax, 3 * 2000 + 2))
+        x_out = numpy.float64(numpy.linspace(xmin, xmax, 3 * 500000 + 2))
         y_out = numpy.empty(len(x_out) - 1, dtype=numpy.float64)
         data_x = numpy.float64(data_x)
         data_y = numpy.float64(data_y)
